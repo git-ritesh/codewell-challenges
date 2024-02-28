@@ -1,0 +1,21 @@
+header {
+    margin-bottom: 3rem;
+}
+
+.primary-nav {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    border: none;
+    background: none;
+    padding: 5px;
+    /* border: 1px solid; */
+}
+
+ul {
+    display: none;
+}

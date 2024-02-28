@@ -1,0 +1,65 @@
+/* Imports Fonts */
+@font-face {
+    font-family: "DM-Sans";
+    src: url(../fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'DM-Sans',serif;
+}
+:root {
+  /* COLORS */
+  --purple: #7d00fb;
+  --gray: #505050;
+  --smoke-white: #fcfcf9;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  margin: 0;
+  padding-block: 3rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header,
+main,
+footer {
+  width: 90%;
+  margin: auto;
+}
+h1, h2, h3 {
+  margin: 0;
+}
+h1 {
+    font-size: 2.875rem;
+    line-height: 1.1;
+}
+h2 {
+    font-size: 2rem;
+    font-weight:600;
+}
+
+p {
+    color: var(--gray);
+}
+
+a, .clr-purple {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+aside img, .section-one img {
+  margin-bottom: 2rem;
+}
+
+footer .left-container .para1 {
+  margin-top: .5rem;
+}

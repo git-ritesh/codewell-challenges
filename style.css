@@ -5,3 +5,7 @@
 body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+li  {
+    font-size: 1.5rem;
+}

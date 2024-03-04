@@ -3,7 +3,6 @@ header {
 }
 
 .primary-nav {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,9 +12,24 @@ header {
     border: none;
     background: none;
     padding: 5px;
-    /* border: 1px solid; */
+    cursor: pointer;
 }
 
-ul {
+.secondary-nav {
+    /* Display none instead of flex as without the toggle the nav will be hidden */
     display: none;
+}
+
+.secondary-nav.is-active {
+    /* unhides the nav to normal form */
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links {
+    color: #000;
 }

@@ -14,21 +14,6 @@
   margin-bottom: 2rem;
 }
 
-footer .left-container h3 {
-  margin: 0;
-}
-
-.extra-margin {
-  margin-block: 2rem;
-}
-
-footer .right-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-}
-
 .container2 img {
   margin-block: 4rem;
 }

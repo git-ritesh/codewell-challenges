@@ -15,5 +15,29 @@
 }
 
 .heart-entity {
-    filter: saturate(0);
+  filter: saturate(0);
+}
+
+@media (min-width: 769px) {
+  footer {
+    display:flex;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  
+  .right-container {
+    column-gap: clamp(1rem, 16%, 5rem);
+    flex: 1;
+    max-width: 25rem;
+    }
+
+  .left-container {
+    max-width: 20rem;
+  }
+}
+
+@media (min-width: 1009px) and (max-width: 1023px) {
+  .right-container {
+    column-gap: 5rem;
+  }
 }

@@ -18,18 +18,36 @@ header {
 .secondary-nav {
     /* Display none instead of flex as without the toggle the nav will be hidden */
     display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
 }
 
 .secondary-nav.is-active {
     /* unhides the nav to normal form */
-    padding: 0;
-    list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
 }
 
 .nav-links {
     color: #000;
+}
+
+/*  ============================ FOR TABLET SCREENS ============================  */
+
+@media (min-width: 769px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hamburger {
+        display: none;
+    }
+    .secondary-nav {
+        display: flex;
+        flex-direction: initial;
+        align-items: center;
+        margin:0;
+    }
 }

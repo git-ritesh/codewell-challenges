@@ -63,3 +63,13 @@ aside img, .section-one img {
 footer .left-container .para1 {
   margin-top: .5rem;
 }
+/*  ============================== FOR TABLET SCREENS ==============================  */
+@media (min-width:769px) {
+  html {
+    font-size: 1.2rem;
+  }
+  img {
+    margin-bottom: unset;
+    max-width: 18rem;
+   }
+}

@@ -1,15 +1,21 @@
-/* Imports Fonts */
+/* Import Fonts */
 @font-face {
     font-family: "DM-Sans";
     src: url(../fonts/DMSans-VariableFont_opsz\,wght.ttf);
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  font-family: 'DM-Sans',serif;
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(../fonts/static/Roboto-Medium.ttf);
 }
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../fonts/static/Roboto-Regular.ttf);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   /* COLORS */
   --purple: #7d00fb;
@@ -22,6 +28,24 @@
 body {
   margin: 0;
   padding-block: 3rem;
+  font-family: 'DM-Sans',serif;
+  position: relative;
+}
+
+main::before {
+  content: '';
+  background: radial-gradient( circle at top left, rgb(225, 181, 235) 0%, rgba(253, 247, 243, 1) 15% );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+header, main, footer {
+  width: 86%;
+  margin: auto;
 }
 
 img {
@@ -29,17 +53,16 @@ img {
   max-width: 100%;
 }
 
-header,
-main,
-footer {
-  width: 90%;
-  margin: auto;
+ul {
+  padding: 0;
+  list-style: none;
 }
+
 h1, h2, h3 {
   margin: 0;
 }
 h1 {
-    font-size: 2.875rem;
+    font-size: clamp(2.75rem, 2.25rem + 2.5vw, 4.5rem);
     line-height: 1.1;
 }
 h2 {
@@ -49,27 +72,33 @@ h2 {
 
 p {
     color: var(--gray);
+    font-size: 1.25rem;
 }
 
-a, .clr-purple {
-    text-decoration: none;
-    color: var(--purple);
+a {
+  text-decoration: none;
 }
 
-aside img, .section-one img {
-  margin-bottom: 2rem;
+/* Flexbox */
+.flexbox {
+  display: flex;
+}
+/* jcsb = Justify Content Space Between */
+.jcsb {
+  justify-content: space-between;
+}
+/* jcc = Justify Content Center */
+.jcc {
+  justify-content: center;
+}
+/* aic = Align Content Center */
+.aic {
+  align-items: center;
 }
 
-footer .left-container .para1 {
-  margin-top: .5rem;
-}
-/*  ============================== FOR TABLET SCREENS ==============================  */
-@media (min-width:769px) {
-  html {
-    font-size: 1.2rem;
-  }
-  img {
-    margin-bottom: unset;
-    max-width: 18rem;
-   }
+.cta {
+  background: var(--purple);
+  color: #fff;
+  padding: 1rem 1rem;
+  border-radius: .25rem;
 }

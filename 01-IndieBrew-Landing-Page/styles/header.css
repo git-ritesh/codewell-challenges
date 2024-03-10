@@ -1,53 +1,54 @@
-header {
-    margin-bottom: 3rem;
-}
-
-.primary-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .hamburger {
     border: none;
     background: none;
-    padding: 5px;
-    cursor: pointer;
+    padding: none;
 }
 
-.secondary-nav {
-    /* Display none instead of flex as without the toggle the nav will be hidden */
+.hamburger__close-img {
     display: none;
+    transform: scale(1.2) translateX(1px);
+}
+.hamburger__open-img {
+    transform: scale(1.2);
+}
+
+.navbar {
+    position: fixed;
+    backdrop-filter: blur(15px);
+    right: 0;
+    top: 0;
+    min-width: max-content;
+    height: 100vh;
+    padding: 6rem 1rem;
+    text-align: center;
+    transform: translateX(100%);
+    transition: transform .2s ease-in-out ;
+}
+.navbar.is-active {
+    transform: translateX(0);
+}
+
+.hamburger.is-active > .hamburger__open-img {
+    display: none;
+}
+.hamburger.is-active > .hamburger__close-img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    rotate: initial;
+    
+}
+
+.nav__list {
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
-    padding: 0;
-    list-style: none;
 }
 
-.secondary-nav.is-active {
-    /* unhides the nav to normal form */
-    display: flex;
+.nav__item--push-down {
+    margin-top: 1rem;
 }
 
-.nav-links {
+.nav__links {
     color: #000;
-}
-
-/*  ============================ FOR TABLET SCREENS ============================  */
-
-@media (min-width: 769px) {
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
-    .hamburger {
-        display: none;
-    }
-    .secondary-nav {
-        display: flex;
-        flex-direction: initial;
-        align-items: center;
-        margin:0;
-    }
+    font-size: 1.125rem;
 }

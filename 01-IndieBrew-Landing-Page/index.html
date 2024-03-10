@@ -13,16 +13,17 @@
 </head>
 
 <body>
-    <header>
+    <header class="flexbox jcsb aic">
         <a class="logo" href=""><img class="logo__img" src="Assets/Logo.svg" alt="Indie Brew Logo"></a>
         <button class="hamburger">
-            <img src="Assets/Hamburger Menu.svg" alt="hamburger-menu image">
+            <img class="hamburger__open-img" src="Assets/Hamburger Menu.svg" alt="hamburger-open-menu">
+            <img class="hamburger__close-img" src="Assets/close-menu.svg" alt="hamburger-close-menu">
         </button>
-        <nav>
-            <ul class="nav__list">
+        <nav class="navbar">
+            <ul class="nav__list flexbox">
                 <li class="nav__item"><a class="nav__links" href="">Pricing</a></li>
                 <li class="nav__item"><a class="nav__links" href="">Support</a></li>
-                <li class="nav__item"><a class="nav__link cta" href=""><b id="clr-white">Get started</b> &mdash; <span>it's free</span></a></li>
+                <li class="nav__item--push-down"><a class="nav__link--cta cta" href=""><b id="clr-white">Get started</b> &mdash; <span>it's free</span></a></li>
             </ul>
         </nav>
     </header>

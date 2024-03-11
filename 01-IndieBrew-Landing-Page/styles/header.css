@@ -6,7 +6,6 @@
 
 .hamburger__close-img {
     display: none;
-    transform: scale(1.2) translateX(1px);
 }
 .hamburger__open-img {
     transform: scale(1.2);
@@ -33,19 +32,16 @@
 }
 .hamburger.is-active > .hamburger__close-img {
     display: block;
-    position: relative;
+    position: fixed;
     z-index: 1;
-    rotate: initial;
-    
+    top: 2.75rem;
+    right: 1.75rem;
+    transform: scale(1.2);
 }
 
 .nav__list {
     flex-direction: column;
     gap: 1rem;
-}
-
-.nav__item--push-down {
-    margin-top: 1rem;
 }
 
 .nav__links {

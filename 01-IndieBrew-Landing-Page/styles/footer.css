@@ -1,0 +1,27 @@
+/* Primary footer Styles */
+.footer__description--extra-margin {
+    margin: 1.5rem 0;
+}
+/* desaturated heart emoji in the footer description */
+.heart-entity {
+    filter: saturate(0);
+}
+
+/* Secondary footer styles */
+.footer__secondary {
+    row-gap: 1rem;
+    column-gap: 30vw;
+}
+
+.footer__heading {
+    font-family: 'Roboto-Medium';
+}
+.footer__list {
+    font-family: 'Roboto-Regular';
+}
+.footer__list-item  {
+    padding-block: .5rem;
+}
+.footer__list-item a {
+    color: var(--gray);
+}

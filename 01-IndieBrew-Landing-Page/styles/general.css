@@ -27,9 +27,11 @@
 
 body {
   margin: 0;
-  padding-block: 3rem;
+  padding-block: 2rem;
   font-family: 'DM-Sans',serif;
   position: relative;
+  /* optimizes text rendering speed but affects legibility  */
+  text-rendering: optimizeSpeed;
 }
 
 main::before {
@@ -61,10 +63,12 @@ ul {
 h1, h2, h3 {
   margin: 0;
 }
+
 h1 {
     font-size: clamp(2.75rem, 2.25rem + 2.5vw, 4.5rem);
     line-height: 1.1;
 }
+
 h2 {
     font-size: 2rem;
     font-weight:600;
@@ -72,33 +76,43 @@ h2 {
 
 p {
     color: var(--gray);
-    font-size: 1.25rem;
 }
 
 a {
   text-decoration: none;
 }
 
-/* Flexbox */
+/* Flexbox related general properties*/
 .flexbox {
   display: flex;
 }
-/* jcsb = Justify Content Space Between */
-.jcsb {
+.fldir-row {
+  flex-direction: row;
+}
+.fldir-row--rev {
+  flex-direction: row-reverse;
+}
+.flw-wrap {
+  flex-wrap: wrap;
+}
+.jc-sb {
   justify-content: space-between;
 }
-/* jcc = Justify Content Center */
-.jcc {
-  justify-content: center;
-}
-/* aic = Align Content Center */
-.aic {
+
+.ai-c {
   align-items: center;
 }
 
+/* Call to Action in Navbar & Main Section */
 .cta {
+  display: inline-block;
   background: var(--purple);
   color: #fff;
   padding: 1rem 1rem;
   border-radius: .25rem;
+  margin-bottom: 1.5rem;
+}
+
+.indiebrewers-count, .section-two__link {
+  color: var(--purple);
 }

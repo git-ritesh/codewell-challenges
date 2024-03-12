@@ -46,8 +46,12 @@ main::before {
 }
 
 header, main, footer {
-  width: 86%;
+  width: min(86%, 90rem);
   margin: auto;
+}
+
+main, footer {
+  font-size: clamp(1rem, 0.821rem + 0.895vw, 1.25rem);
 }
 
 img {
@@ -65,7 +69,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: clamp(2.75rem, 2.25rem + 2.5vw, 4.5rem);
+    font-size: 2.75rem;
     line-height: 1.1;
 }
 
@@ -86,19 +90,12 @@ a {
 .flexbox {
   display: flex;
 }
-.fldir-row {
-  flex-direction: row;
-}
-.fldir-row--rev {
-  flex-direction: row-reverse;
-}
 .flw-wrap {
   flex-wrap: wrap;
 }
 .jc-sb {
   justify-content: space-between;
 }
-
 .ai-c {
   align-items: center;
 }
@@ -110,7 +107,6 @@ a {
   color: #fff;
   padding: 1rem 1rem;
   border-radius: .25rem;
-  margin-bottom: 1.5rem;
 }
 
 .indiebrewers-count, .section-two__link {

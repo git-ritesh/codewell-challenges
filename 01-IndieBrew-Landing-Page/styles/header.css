@@ -50,7 +50,7 @@
     text-transform: uppercase;
 }
 
-@media (min-width: 48rem) and (max-width: 64rem) {
+@media (min-width: 48rem) {
     .hamburger {
         display: none;
     }

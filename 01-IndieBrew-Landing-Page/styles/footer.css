@@ -1,4 +1,10 @@
 /* Primary footer Styles */
+footer {
+    flex-direction: column;
+}
+.footer__primary {
+    max-width: 23rem;
+}
 .footer__description--extra-margin {
     margin: 1.5rem 0;
 }
@@ -24,4 +30,38 @@
 }
 .footer__list-item a {
     color: var(--gray);
+}
+
+@media (min-width: 48rem) {
+    footer {
+        flex-direction: row;
+        gap: 5%;
+        justify-content: space-between;
+
+    }
+
+    .footer__secondary {
+        gap: 1rem;
+        column-gap: 5vw;
+    }
+}
+
+@media (min-width: 51.25rem) {
+    footer {
+        gap: 10%;
+    }
+}
+
+@media (min-width: 58.75rem) {
+    footer {
+        flex-direction: row;
+        gap: 15%;
+        justify-content: space-between;
+
+    }
+
+    .footer__secondary {
+        gap: 1rem;
+        column-gap: 8vw;
+    }
 }

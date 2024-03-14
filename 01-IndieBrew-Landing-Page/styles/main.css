@@ -41,17 +41,12 @@
     .section-two__wrapper-txt {
         max-width: 28rem;
     }
-}
 
-@media (min-width: 58.75rem) {
-    .section-two {
-        gap: 4rem;
-    }
     .section-two__container {
         flex-direction: row;
         justify-content: space-between;
+        gap: 1.5rem;
     }
-
     .section-two__container.row-rev {
         flex-direction: row-reverse;
     }
@@ -61,5 +56,9 @@
     }
     #phone-img.section-two__img {
         padding: 0;
+    }
+
+    .section-two {
+        gap: 4rem;
     }
 }

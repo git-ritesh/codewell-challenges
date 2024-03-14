@@ -1,9 +1,11 @@
 /* Primary footer Styles */
 footer {
     flex-direction: column;
+    /* border: 2px solid red; */
 }
 .footer__primary {
     max-width: 23rem;
+    /* border: 2px solid blue; */
 }
 .footer__description--extra-margin {
     margin: 1.5rem 0;
@@ -17,6 +19,7 @@ footer {
 .footer__secondary {
     row-gap: 1rem;
     column-gap: 30vw;
+    /* border: 2px solid blue; */
 }
 
 .footer__heading {
@@ -41,27 +44,8 @@ footer {
     }
 
     .footer__secondary {
-        gap: 1rem;
-        column-gap: 5vw;
-    }
-}
-
-@media (min-width: 51.25rem) {
-    footer {
-        gap: 10%;
-    }
-}
-
-@media (min-width: 58.75rem) {
-    footer {
-        flex-direction: row;
-        gap: 15%;
-        justify-content: space-between;
-
-    }
-
-    .footer__secondary {
-        gap: 1rem;
-        column-gap: 8vw;
+        row-gap: 1rem;
+        column-gap: inherit;
+        max-width: 19rem;
     }
 }

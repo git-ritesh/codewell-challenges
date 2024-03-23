@@ -1,3 +1,6 @@
+header {
+    padding-top: 2.5rem;
+}
 .hamburger {
     border: none;
     background: none;
@@ -68,5 +71,11 @@
     }
     .nav__links {
         text-transform: initial;
+    }
+}
+
+@media (min-width: 64rem) {
+    header {
+        padding-top: 3rem;
     }
 }

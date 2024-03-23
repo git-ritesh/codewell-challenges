@@ -1,11 +1,15 @@
 /* Primary footer Styles */
 footer {
     flex-direction: column;
-    /* border: 2px solid red; */
+    padding-block: 2rem;
+    /* Applies full width background (equal to body width)  */
+    box-shadow: 0 0 0 100vmax #fdfcf9 ;
+    clip-path: inset(0 -100vmax);
+    background: #fdfcf9;
 }
+
 .footer__primary {
     max-width: 23rem;
-    /* border: 2px solid blue; */
 }
 .footer__description--extra-margin {
     margin: 1.5rem 0;
@@ -19,7 +23,6 @@ footer {
 .footer__secondary {
     row-gap: 1rem;
     column-gap: 30vw;
-    /* border: 2px solid blue; */
 }
 
 .footer__heading {
@@ -40,12 +43,30 @@ footer {
         flex-direction: row;
         gap: 5%;
         justify-content: space-between;
-
+        padding-block: 3rem;
     }
 
     .footer__secondary {
         row-gap: 1rem;
         column-gap: inherit;
         max-width: 19rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    footer {
+        flex-direction: row;
+        gap: 5%;
+        justify-content: space-between;
+    }
+
+
+    .footer__secondary {
+        max-width: 45rem;
+        column-gap: unset;
+        row-gap: 0;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex: 1;
     }
 }

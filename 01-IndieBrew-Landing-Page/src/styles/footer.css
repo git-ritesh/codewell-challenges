@@ -8,6 +8,10 @@ footer {
     background: #fdfcf9;
 }
 
+footer .footer__heading {
+    margin: 0;
+}
+
 .footer__primary {
     max-width: 23rem;
 }

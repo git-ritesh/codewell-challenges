@@ -1,4 +1,29 @@
+#landing-main::before {
+    content: '';
+    background: radial-gradient( circle at top left, rgb(225, 181, 235) 1%, rgba(253, 247, 243, 1) 20% );
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
 /* Applies to Multiple Sections */
+
+.section-one__heading, .section-two__heading {
+    margin: 0;
+}
+
+.section-one__heading {
+    font-size: 3em;
+    line-height: 1.1;
+}
+
+.section-two__heading {
+    font-size: 2em;
+}
+
 .section-one__tablet-img, .section-two__img {
     width: 100%;
     max-width: 22rem;

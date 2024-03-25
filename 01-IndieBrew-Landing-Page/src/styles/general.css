@@ -35,6 +35,10 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+#body-sign-up {
+  background: #fae6f8;
+}
+
 header, main,  footer  {
   width: min(86%, 90rem);
   margin: auto;
@@ -87,4 +91,8 @@ a {
 
 .indiebrewers-count, .section-two__link {
   color: var(--purple);
+}
+
+.bg-fff {
+  background: #fff;
 }

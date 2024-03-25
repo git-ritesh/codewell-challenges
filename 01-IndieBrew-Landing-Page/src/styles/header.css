@@ -79,3 +79,11 @@ header {
         padding-top: 3rem;
     }
 }
+
+/* =================== SIGN UP PAGE ===================  */
+#back-btn {
+    padding-inline: 14px;
+    border: 1px solid #cccc;
+    border-radius: .25rem;
+    align-self: stretch;
+}

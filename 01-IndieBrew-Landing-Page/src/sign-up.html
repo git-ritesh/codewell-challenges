@@ -5,33 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Page</title>
     <!-- External CSS Link -->
-    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body id="body-sign-up">
     <header>
-        <div class="container">
+        <div class="container flexbox jc-sb ai-c">
             <a href="../index.html" class="logo-link"><img id="logo-img" src="Assets/Logo.svg" alt="IndieBrew logo"></a>
-            <div class="back-btn-wrapper"><a href="../index.html" id="back-btn"><img src="Assets/Back Arrow.svg" alt="back arrow icon"></a></div>
-        </div>
+            <a href="../index.html" id="back-btn" class="flexbox bg-fff"><img src="Assets/Back Arrow.svg" alt="back arrow icon"></a>
     </header>
     <main>
-        <div class="container flexbox">
+        <div class="container">
             <div class="flex-item">
                 <h1>Create your personalized feed.</h1>
-                <p><strong>Over 20 resources. </strong>With resources ranging from Reddit to IndieHackers, we've got all your needs covered.</p>
-                <p><strong>Delivered weekly. </strong>Every week at exactly Tuesday 12:00 P.M. EST &mdash; expect a value-packed digest right in your email.</p>
-                <p><strong>Unlimited ideas. </strong>With all the ideas you'll be reading about, what's stopping you form creating a sustainable startup?</p>
+                <p class="sign-up" id="resources"><strong>Over 20 resources. </strong>With resources ranging from Reddit to IndieHackers, we've got all your needs covered.</p>
+                <p class="sign-up" id="deliver"><strong>Delivered weekly. </strong>Every week at exactly Tuesday 12:00 P.M. EST &mdash; expect a value-packed digest right in your email.</>
+                <p class="sign-up" id="ideas"><strong>Unlimited ideas. </strong>With all the ideas you'll be reading about, what's stopping you form creating a sustainable startup?</p>
             </div>
-            <form action="" class="flex-item">
-                <h2>Create your IndieBrew Account</h2>
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="john@example.com">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="John Doe">
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="At least 8 characters">
-                <div class="terms-container">
+            <form action="" class="flex-item bg-fff">
+                <h3 class="sign-up">Create your IndieBrew Account</h3>
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                <label for="name"><strong>Full Name</strong></label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <label for="password"><strong>Password</strong></label>
+                <input type="password" id="password" placeholder="At least 8 characters" required>
+                <div class="terms-container flexbox">
                     <input type="checkbox" name="terms" id="terms" required>
                     <label for="terms">By creating an account on IndieBrew, you agree to the <strong><a href="" class="terms-link">Terms & Conditions</a></strong>.</label>
                 </div>

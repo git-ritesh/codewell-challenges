@@ -25,7 +25,7 @@
 
 .section-one__tablet-img, .section-two__img {
     width: 100%;
-    max-width: 352px;
+    max-width: 22rem;
     align-self: center;
 }
 /* Applies to Multiple Sections */
@@ -34,20 +34,20 @@
 }
 
 .section-one, .section-two {
-    padding-block: 48px;
+    padding-block: 3rem;
 }
 
 .section-one__tablet-img {
-    padding-inline: 8px;
-    margin-bottom: 40px;
+    padding-inline: .5rem;
+    margin-bottom: 2.5rem;
 }
 
 .section-one__container {
-    max-width: 648px;
+    max-width: 40.5rem;
 }
 
 .section__cta {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .section-two {
@@ -58,24 +58,102 @@
 }
 
 .section-two__img {
-    margin: 32px 0;
+    margin: 2rem 0;
 }
 #phone-img.section-two__img {
-    padding: 16px;
+    padding: 1rem;
 }
 
-@media (min-width: 768px) {
+/* ==================== SIGN UP PAGE STYLES ==================== */
+p.sign-up {
+    margin: 0 0 2rem;
+}
+p.sign-up::before {
+    font-size: 1.5rem;
+    margin-right: .25rem;
+}
+
+#resources::before {
+    content: "🎈";
+}
+#deliver::before {
+    content: "🗞️";
+}
+#ideas::before {
+    content: "💡";
+}
+
+form {
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-bottom: 2.5rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form > * {
+    margin: 0;
+}
+
+h2.sign-up, input, .terms-container {
+    margin-bottom: 1.5rem;
+}
+h2.sign-up {
+    font-size: 18.72px;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+label[for=terms] {
+    margin-bottom: 0;
+}
+
+input {
+    width: 100%;
+    padding: .75rem;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.terms-container {
+    align-items: baseline;
+}
+#terms {
+    width: initial;
+    margin-right: .5rem;
+    margin-top: 0;
+}
+.terms-link {
+    text-decoration: underline;
+    color: var(--purple);
+}
+
+button.cta {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    background: var(--purple);
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+}
+/* FOR TABLET & SMALL SIZE LAPTOPS */
+@media (min-width: 48rem) {
+    /* =============== LANDING PAGE STYLES =============== */
     .section-one__tablet-img {
         padding-inline: 0;
     }
     .section-two__wrapper-txt {
-        max-width: 448px;
+        max-width: 28rem;
     }
 
     .section-two__container {
         flex-direction: row;
         justify-content: space-between;
-        gap: 24px;
+        gap: 1.5rem;
     }
     .section-two__container.row-rev {
         flex-direction: row-reverse;
@@ -89,13 +167,17 @@
     }
     inherit
     .section-two {
-        gap: 64px;
+        gap: 4rem;
+    }
+    /* ================ SIGN UP PAGE STYLES ================ */
+    p.sign-up::before {
+        margin-right: .5rem;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
     .section-one, .section-two {
-        padding-block: 64px;
+        padding-block: 4rem;
     }
 
     .section-one {
@@ -110,15 +192,15 @@
 
     .section-one__tablet-img {
         flex: 1;
-        min-width: 256px;
+        min-width: 16rem;
         max-width: 100%;
-        margin-left: -48px;
+        margin-left: -3rem;
         padding-inline: 0;
         margin-bottom: 0;
     }
 
     .section-two {
-        gap: 96px;
+        gap: 6rem;
         margin-block: initial;
     }
 
@@ -127,90 +209,14 @@
     }
 
     .section-two__wrapper-txt {
-        max-width: 672px;
+        max-width: 42rem;
     }
     
     .section-two__heading {
-        max-width: 576px;
+        max-width: 36rem;
     }
 
     .section-two__img {
-        max-width: 480px;
+        max-width: 30rem;
     }
-}
-
-/* ==================== SIGN UP PAGE STYLES ==================== */
-p.sign-up {
-    margin: 0 0 32px;
-}
-p.sign-up::before {
-    font-size: 24px;
-    margin-right: 4px;
-}
-
-#resources::before {
-    content: "🎈";
-}
-#deliver::before {
-    content: "🗞️";
-}
-#ideas::before {
-    content: "💡";
-}
-
-form {
-    padding: 32px;
-    border-radius: 8px;
-    margin-bottom: 40px;
-    flex-direction: column;
-    gap: 16px;
-}
-
-form > * {
-    margin: 0;
-}
-
-h2.sign-up, input, .terms-container {
-    margin-bottom: 24px;
-}
-h2.sign-up {
-    font-size: 1.17rem;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-label[for=terms] {
-    margin-bottom: 0;
-}
-
-input {
-    width: 100%;
-    padding: 12px;
-    font-family: inherit;
-    font-size: 16px;
-}
-
-.terms-container {
-    align-items: flex-start;
-}
-#terms {
-    width: initial;
-    margin-right: 8px;
-}
-.terms-link {
-    text-decoration: underline;
-    color: var(--purple);
-}
-
-button.cta {
-    cursor: pointer;
-    border: none;
-    width: 100%;
-    background: var(--purple);
-    font-size: 16px;
-    font-family: inherit;
-    font-weight: bold;
 }
